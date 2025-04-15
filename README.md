@@ -1,6 +1,6 @@
 ﻿# 323-prac6p
 
-###required tools
+### required tools
 
 Git 
 
@@ -16,7 +16,7 @@ Kubernetes CLI (kubectl)
 
 Docker CLI
 
-###steps
+### steps
 
 1.Build the Docker Image
 
