@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-web-app
+  labels:
+    app: node-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-web
+  template:
+    metadata:
+      labels:
+        app: node-web
+    spec:
+      containers:
+      - name: node-web-app
+        image: 0y0k/microservice:latest
+        ports:
+        - containerPort: 3000
